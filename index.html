@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy Football Rankings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fantasy Football Rankings</h1>
+  </header>
+
+  <main>
+    <div class="filters">
+      <label for="position">Filter by position:</label>
+      <select id="position" onchange="filterRankings()">
+        <option value="ALL">All</option>
+        <option value="QB">QB</option>
+        <option value="RB">RB</option>
+        <option value="WR">WR</option>
+        <option value="TE">TE</option>
+      </select>
+    </div>
+
+    <table id="rankingsTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Team</th>
+          <th>Position</th>
+          <th>Bye</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rankings will be dynamically loaded here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
